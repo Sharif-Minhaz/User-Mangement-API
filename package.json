@@ -1,0 +1,25 @@
+{
+	"name": "user-management-system-api",
+	"version": "1.0.0",
+	"description": "An api for demo users information.",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "nodemon app.js",
+		"start": "node app.js"
+	},
+	"author": "Sharif Md. Minhazur Rahman Rabbi",
+	"license": "ISC",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.1",
+		"express": "^4.18.1",
+		"mongoose": "^6.3.4"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.16"
+	},
+	"engines": {
+		"node": "14.17.0"
+	}
+}
