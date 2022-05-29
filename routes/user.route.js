@@ -3,7 +3,10 @@ const {
 	addUserPostController,
 	deleteUserGetController,
 	updateUserPostController,
+	showSingleUserGetController,
 } = require("../controllers/user.controller");
+
+router.get("/:id", showSingleUserGetController);
 
 router.post("/add", addUserPostController);
 

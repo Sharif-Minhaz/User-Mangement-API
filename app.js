@@ -10,7 +10,7 @@ setMiddlewares(app);
 setRoutes(app);
 
 app.use((req, res, next) => {
-	let error = new Error("404 page not found");
+	let error = new Error();
 	error.status = 404;
 	next(error);
 });
@@ -18,7 +18,7 @@ app.use((req, res, next) => {
 app.use((error, req, res, next) => {
 	if (error.status === 404) {
 		res.json({
-			error: "404 request route not found",
+			error: "Url not found, failed to fetch data.",
 		});
 	} else {
 		res.json({
