@@ -1,8 +1,8 @@
 const router = require("express").Router();
 const {
 	addUserPostController,
-	deleteUserGetController,
-	updateUserPostController,
+	updateUserPutController,
+	deleteUserDeleteController,
 	showSingleUserGetController,
 } = require("../controllers/user.controller");
 
@@ -10,8 +10,8 @@ router.get("/:id", showSingleUserGetController);
 
 router.post("/add", addUserPostController);
 
-router.post("/update/:id", updateUserPostController);
+router.put("/update/:id", updateUserPutController);
 
-router.get("/delete/:id", deleteUserGetController);
+router.delete("/delete/:id", deleteUserDeleteController);
 
 module.exports = router;

@@ -31,7 +31,7 @@ exports.addUserPostController = async (req, res, next) => {
 	}
 };
 
-exports.deleteUserGetController = async (req, res, next) => {
+exports.deleteUserDeleteController = async (req, res, next) => {
 	const { id } = req.params;
 
 	try {
@@ -42,7 +42,7 @@ exports.deleteUserGetController = async (req, res, next) => {
 	}
 };
 
-exports.updateUserPostController = async (req, res, next) => {
+exports.updateUserPutController = async (req, res, next) => {
 	const { id } = req.params;
 	const { username, email } = req.body;
 
